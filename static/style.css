@@ -40,6 +40,11 @@ h1 {
 	color: var(--dark);
 }
 
+.btn-hide {
+	animation-name: hideButtons;
+	animation-duration: .3s;
+}
+
 .btn {
 	background-color: var(--white);
 	border: 1px solid var(--primary);
@@ -64,4 +69,16 @@ h1 {
 
 .btn-change:hover {
 	background-color: var(--primary-dark);
+}
+
+@keyframes hideButtons {
+	0% {
+		opacity: 1;
+	}
+	99% {
+		height: 1px;
+	}
+	100% {
+		opacity: 0;
+	}
 }
