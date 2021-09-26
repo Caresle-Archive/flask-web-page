@@ -26,4 +26,19 @@ learnMore.addEventListener('click', () => {
 function removeButtons() {
 	buttonContainer.remove()
 	clearTimeout(timeoutId)
+	const textToInsert = document.createElement('section')
+	textToInsert.classList.add('items-center')
+	textToInsert.innerHTML = `
+		<h2 class="text-color text-center">What is Flask?</h2>
+		<p class="text-color">
+			Flask is a lightweight WSGI web application framework.
+			It is designed to make getting started quick and easy. 
+		</p>
+		<button class="btn btn-change">
+			<a href="https://flask.palletsprojects.com/" target="blank">
+			Flask website
+			</a>
+		</button>
+	`
+	body.appendChild(textToInsert)
 }

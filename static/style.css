@@ -40,6 +40,21 @@ h1 {
 	color: var(--dark);
 }
 
+.items-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.text-color {
+	color: var(--dark);
+}
+
+.text-center {
+	text-align: center;
+}
+
 .btn-hide {
 	animation-name: hideButtons;
 	animation-duration: .3s;
@@ -53,6 +68,11 @@ h1 {
 	font-size: 1rem;
 	color: var(--dark);
 	transition: background-color .25s, filter .25s;
+}
+
+.btn > a {
+	text-decoration: none;
+	color: var(--dark);
 }
 
 .btn:hover {
@@ -69,6 +89,7 @@ h1 {
 
 .btn-change:hover {
 	background-color: var(--primary-dark);
+	border: 1px solid var(--primary-dark);
 }
 
 @keyframes hideButtons {
