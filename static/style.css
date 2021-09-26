@@ -103,3 +103,23 @@ h1 {
 		opacity: 0;
 	}
 }
+
+@media only screen and (min-width: 1440px) {
+	body {
+		font-size: 28px;
+	}
+}
+
+@media only screen and (min-width: 2560px) {
+	body {
+		font-size: 32px;
+	}
+
+	.btn {
+		font-size: 3rem;
+	}
+
+	p {
+		font-size: 2.5rem;
+	}
+}

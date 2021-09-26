@@ -30,7 +30,7 @@ function removeButtons() {
 	textToInsert.classList.add('items-center')
 	textToInsert.innerHTML = `
 		<h2 class="text-color text-center">What is Flask?</h2>
-		<p class="text-color">
+		<p class="text-color text-center">
 			Flask is a lightweight WSGI web application framework.
 			It is designed to make getting started quick and easy. 
 		</p>
